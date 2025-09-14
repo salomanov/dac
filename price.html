@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/FrizQuadrataC.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Цены</title>
+		<script type="module" crossorigin="" src="./js/price.min.js?v=1757885020831"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1757885020831">
+		<link rel="stylesheet" crossorigin="" href="./css/price.min.css?v=1757885020831">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<div class="menu__container">
+								<!-- Добавленная обертка -->
+								<div class="menu__logo">
+									<a href="index.html">
+										<img src="./assets/img/logo.svg" width="25" height="25" alt="Логотип DENTAIRE AVENIR CLINIQUE">
+									</a>
+								</div>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">О клинике</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Услуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Команда</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Отзывы</a>
+									</li>
+									<li class="menu__item">
+										<a href="price" class="menu__link">Цены</a>
+									</li>
+								</ul>
+								<ul class="menu__contacts">
+									<li class="menu__tel">
+										<a href="" target="_blank">+7 (967) 555-14-80</a>
+									</li>
+									<li class="menu__mail">
+										<a href="mailto:email@example.com">
+											<img src="./assets/img/email.svg" width="25" height="25" alt="Почта">
+										</a>
+									</li>
+									<li class="menu__tg">
+										<a href="https://t.me/username" target="_blank">
+											<img src="./assets/img/tg.svg" width="25" height="25" alt="Телеграмм">
+										</a>
+									</li>
+									<li class="menu__wa">
+										<a href="https://wa.me/79675551480" target="_blank">
+											<img src="./assets/img/wa.svg" width="25" height="25" alt="Вотсап">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--price price">
+				<div class="price__container">
+					<div data-fls-tabs="" class="tabs">
+						<div class="tabs__header">
+							<div class="price__title">Прейскурант ООО "Картье"</div>
+							<nav data-fls-tabs-titles="" class="tabs__navigation">
+								<button type="button" class="tabs__title --tab-active">Консультативный прием</button>
+								<button type="button" class="tabs__title">Рентгенологическая диагностика</button>
+								<button type="button" class="tabs__title">Анестезия</button>
+								<button type="button" class="tabs__title">Терапия</button>
+								<button type="button" class="tabs__title">Профилактика</button>
+								<button type="button" class="tabs__title">Пародонтология</button>
+								<button type="button" class="tabs__title">Отбеливание зубов</button>
+								<button type="button" class="tabs__title">Хирургия</button>
+								<button type="button" class="tabs__title">Ортодонтия</button>
+								<button type="button" class="tabs__title">Ортопедия</button>
+							</nav>
+							<div class="tabs__items-header">
+								<div>Код</div>
+								<div>Услуги</div>
+								<div class="tabs__items-price">Цена, руб.</div>
+							</div>
+						</div>
+						<div data-fls-tabs-body="" class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">В01.003.001</div>
+										<div class="tabs__text">Осмотр (консультация) врача-анестезиологом-реаниматологом первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.063.001</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-ортодонта первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.063.002</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-ортодонта повторный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.064.003</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога детского первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.065.001</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога-терапевта первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.065.002</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога-терапевта повторный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.065.005</div>
+										<div class="tabs__text">Прием (осмотр, консультация) гигиениста стоматологического первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.066.007</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.066.001</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.066.002</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.067.001</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-stоматолога-хирурга первичный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.067.002</div>
+										<div class="tabs__text">Прием (осмотр, консультация) врача-стоматолога-хирурга повторный</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В04.065.005</div>
+										<div class="tabs__text">Диспансерный прием (осмотр, консультация) врача-стоматолога</div>
+										<div class="tabs__price">4&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В04.065.006</div>
+										<div class="tabs__text">Профилактический прием (осмотр, консультация) врача-стоматолога</div>
+										<div class="tabs__price">2&nbsp;500</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.004</div>
+										<div class="tabs__text">Ортопантомография</div>
+										<div class="tabs__price">2&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.006</div>
+										<div class="tabs__text">Телерентгенография челюстей</div>
+										<div class="tabs__price">2&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.012</div>
+										<div class="tabs__text">Радиовизиография</div>
+										<div class="tabs__price">1&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.013</div>
+										<div class="tabs__text">Компьютерная томография челюстно-лицевой области</div>
+										<div class="tabs__price">4&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.013.001</div>
+										<div class="tabs__text">Компьютерная томография челюстно-лицевой области сегмент</div>
+										<div class="tabs__price">1&nbsp;500</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.013.004</div>
+										<div class="tabs__text">Компьютерная томография одной челюсти</div>
+										<div class="tabs__price">2&nbsp;500</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А06.07.013.006</div>
+										<div class="tabs__text">Компьютерная томография придаточных пазух носа, гортани</div>
+										<div class="tabs__price">4&nbsp;000</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">В01.003.004.002</div>
+										<div class="tabs__text">Проводниковая анестезия</div>
+										<div class="tabs__price">1&nbsp;500</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.003.004.004</div>
+										<div class="tabs__text">Аппликационная анестезия</div>
+										<div class="tabs__price">500</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">В01.003.004.005</div>
+										<div class="tabs__text">Инфильтрационная анестезия</div>
+										<div class="tabs__price">1&nbsp;500</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.002</div>
+										<div class="tabs__text">
+											Восстановление постоянного зуба пломбой I, II, III, V, VI&nbsp;класс
+								по
+								Блэку с&nbsp;использованием материалов химического отверждения
+										</div>
+										<div class="tabs__price">7&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.009</div>
+										<div class="tabs__text">Наложение временной пломбы</div>
+										<div class="tabs__price">4&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.010</div>
+										<div class="tabs__text">
+											Восстановление постоянного зуба пломбой I, V, VI&nbsp;класс
+								по&nbsp;Блэку с
+								использованием материалов из&nbsp;фотополимеров
+										</div>
+										<div class="tabs__price">14&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.011</div>
+										<div class="tabs__text">
+											Восстановление постоянного зуба пломбой II, III класс по&nbsp;Блэку
+								с
+								использованием материалов из&nbsp;фотополимеров
+										</div>
+										<div class="tabs__price">15&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.012</div>
+										<div class="tabs__text">
+											Восстановление постоянного зуба пломбой&nbsp;IV класс по&nbsp;Блэку
+								с
+								использованием материалов из&nbsp;фотополимеров
+										</div>
+										<div class="tabs__price">16&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.002.013</div>
+										<div class="tabs__text">
+											Восстановление зуба пломбой частичное при подготовке к
+								эндодонтическому лечению
+										</div>
+										<div class="tabs__price">3&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.008.002</div>
+										<div class="tabs__text">Пломбирование корневого канала зуба гуттаперчивыми штифтами</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.008.003</div>
+										<div class="tabs__text">Закрытие перфорации стенки корневого канала зуба</div>
+										<div class="tabs__price">3&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.030.001</div>
+										<div class="tabs__text">
+											Инструментальная и&nbsp;медикаментозная обработка хорошо проходимого
+								канала
+										</div>
+										<div class="tabs__price">3&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.030.002</div>
+										<div class="tabs__text">
+											Инструментальная и&nbsp;медикаментозная обработка плохо проходимого
+								корневого канала
+										</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.030.003</div>
+										<div class="tabs__text">Временное пломбирование лекарственными препаратами корневого канала</div>
+										<div class="tabs__price">2&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.030.004</div>
+										<div class="tabs__text">
+											Инструментальная и&nbsp;медикаментозная обработка канала
+								с&nbsp;извлечением
+								инородного тела
+										</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.050.001</div>
+										<div class="tabs__text">
+											Отбеливание ранее депульпированных зубов со&nbsp;снятием пломбы и
+								частичным распломбированием корневого канала&nbsp;&mdash; 1&nbsp;вложение
+										</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.082</div>
+										<div class="tabs__text">Сошлифовывание твердых тканей зуба</div>
+										<div class="tabs__price">1&nbsp;500</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.082.001</div>
+										<div class="tabs__text">Распломбировка корневого канала ранее леченного пастой</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.082.002</div>
+										<div class="tabs__text">
+											Распломбировка корневого канала ранее леченного
+								фосфат-цементом/резорцин-формальдегидным методом
+										</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.082.003</div>
+										<div class="tabs__text">Распломбировка корневого канала ранее леченного гуттаперчевыми
+								штифтами</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.093</div>
+										<div class="tabs__text">Фиксация внутриканального штифта</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.094</div>
+										<div class="tabs__text">Удаление внутриканального штифта, вкладки</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.003</div>
+										<div class="tabs__text">
+											Исследование зубодесневых карманов с&nbsp;помощью
+								пародонтологического зонда (пародонтограмма)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.008</div>
+										<div class="tabs__text">Определение степени патологической подвижности зубов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.009</div>
+										<div class="tabs__text">Одонтопародонтограмма</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A12.07.003</div>
+										<div class="tabs__text">Определение индексов гигиены полости рта</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A12.07.004</div>
+										<div class="tabs__text">Определение пародонтальных индексов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.012</div>
+										<div class="tabs__text">Глубокое фторирование эмали зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.024</div>
+										<div class="tabs__text">Местное применение реминерализующих препаратов в&nbsp;области зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.024.001</div>
+										<div class="tabs__text">
+											Местное применение реминерализующих препаратов в&nbsp;области всех
+								зубов с&nbsp;использованием капы
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A14.07.008</div>
+										<div class="tabs__text">
+											Обучение гигиене полости рта и&nbsp;зубов индивидуальное, подбор
+								средств и&nbsp;предметов гигиены полости рта
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.020</div>
+										<div class="tabs__text">
+											Удаление наддесневых и&nbsp;поддесневых зубных отложений
+								в&nbsp;области зуба
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.025</div>
+										<div class="tabs__text">Избирательное пришлифовывание твердых тканей зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.001</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта и&nbsp;всех зубов у&nbsp;детей
+								с&nbsp;временным прикусом (до&nbsp;7&nbsp;лет)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.002</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта и&nbsp;всех зубов у&nbsp;детей
+								со&nbsp;сменным прикусом (до&nbsp;14&nbsp;лет)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.003</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта и&nbsp;всех зубов
+								в&nbsp;постоянном прикусе
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.004</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта и&nbsp;всех зубов
+								в&nbsp;постоянном прикусе (на&nbsp;ортодонтическом лечении)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.005</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта и&nbsp;всех зубов
+								в&nbsp;постоянном прикусе: при заболеваниях тканей пародонта
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A22.07.002</div>
+										<div class="tabs__text">
+											Ультразвуковое удаление наддесневых и&nbsp;поддесневых зубных
+								отложений в&nbsp;области зуба
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.010</div>
+										<div class="tabs__text">Введение лекарственных препаратов в&nbsp;пародонтальный карман</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.011</div>
+										<div class="tabs__text">
+											Инъекционное введение лекарственных препаратов
+								в&nbsp;челюстно-лицевую область
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A11.07.022</div>
+										<div class="tabs__text">
+											Аппликация лекарственного препарата на&nbsp;слизистую оболочку
+								полости рта
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A15.03.011</div>
+										<div class="tabs__text">Снятие шины с&nbsp;одной челюсти</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A15.07.003</div>
+										<div class="tabs__text">
+											Наложение лечебной повязки при заболеваниях слизистой оболочки
+								полости рта и&nbsp;пародонта в&nbsp;области одной челюсти
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.019</div>
+										<div class="tabs__text">Временное шинирование при заболеваниях пародонта</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.039</div>
+										<div class="tabs__text">Закрытый кюретаж при заболеваниях пародонта в&nbsp;области зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A20.07.001</div>
+										<div class="tabs__text">Гидромассаж при заболеваниях полости рта и&nbsp;зубов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A22.07.001</div>
+										<div class="tabs__text">Ультразвуковая обработка пародонтального кармана в&nbsp;области зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A22.07.003</div>
+										<div class="tabs__text">Лазерная физиотерапия челюстно-лицевой области</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A22.07.008</div>
+										<div class="tabs__text">Воздействие лазерным низкоинтенсивным излучением на&nbsp;область
+								десен</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A25.07.001</div>
+										<div class="tabs__text">
+											Назначение лекарственных препаратов при заболеваниях полости рта
+								и&nbsp;зубов
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.006</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта при пародонтите легкой степени
+								тяжести (в&nbsp;области 1&nbsp;челюсти)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.007</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта при пародонтите средней степени
+								тяжести (в&nbsp;области 1&nbsp;челюсти)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.051.008</div>
+										<div class="tabs__text">
+											Профессиональная гигиена полости рта при пародонтите тяжелой степени
+								тяжести (в&nbsp;области 1&nbsp;челюсти)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.050</div>
+										<div class="tabs__text">Профессиональное отбеливание зубов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.050.001</div>
+										<div class="tabs__text">Профессиональное отбеливание зубов домашней системой</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.050.002</div>
+										<div class="tabs__text">Профессиональное отбеливание зубов системой Opalescense Boost</div>
+										<div class="tabs__price"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">А11.07.026</div>
+										<div class="tabs__text">
+											Взятие образца биологического материала из&nbsp;очагов поражения
+								органов полости рта
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А11.12.009</div>
+										<div class="tabs__text">Взятие крови из&nbsp;периферической вены</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.001.001</div>
+										<div class="tabs__text">Удаление временного зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.001.002</div>
+										<div class="tabs__text">Удаление постоянного зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.001.003</div>
+										<div class="tabs__text">Удаление зуба сложное с&nbsp;разъединением корней</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.007</div>
+										<div class="tabs__text">Резекция верхушки корня</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.014</div>
+										<div class="tabs__text">Вскрытие и&nbsp;дренирование абсцесса полости рта</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.016</div>
+										<div class="tabs__text">Цистотомия или цистэктомия</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.017</div>
+										<div class="tabs__text">Пластика альвеолярного отростка</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.017.002</div>
+										<div class="tabs__text">Коррекция объема и&nbsp;формы альвеолярного отростка</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.017.003</div>
+										<div class="tabs__text">Пластика альвеолярного отростка. В&nbsp;области 1-2 зубов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.017.004</div>
+										<div class="tabs__text">Пластика альвеолярного отростка. В&nbsp;области 3-4 зубов</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.024</div>
+										<div class="tabs__text">
+											Операция удаления ретинированного, дистопированного или
+								сверхкомплектного зуба
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.026</div>
+										<div class="tabs__text">Гингивопластика</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.027</div>
+										<div class="tabs__text">Остеотомия челюсти</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.028.003</div>
+										<div class="tabs__text">Ортодонтическая коррекция (установка ортодонтического винта)</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.038</div>
+										<div class="tabs__text">Открытый кюретаж при заболеваниях пародонта в&nbsp;области зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.040</div>
+										<div class="tabs__text">Лоскутная операция в&nbsp;полости рта в&nbsp;области одного зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.040.001</div>
+										<div class="tabs__text">Лоскутная операция в&nbsp;полости рта в&nbsp;области 1&nbsp;сегмента</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.042</div>
+										<div class="tabs__text">Пластика уздечки верхней губы</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.043</div>
+										<div class="tabs__text">Пластика уздечки нижней губы</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.044</div>
+										<div class="tabs__text">Пластика уздечки языка</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.045.001</div>
+										<div class="tabs__text">Вестибулопластика в&nbsp;области одного зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация системы Straumann</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054.001</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация системой Inno</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054.003</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация системой Nobel</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054.004</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация системой Astra Tech</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054.005</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация (временный имплантат)</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.054.006</div>
+										<div class="tabs__text">Внутрикостная дентальная имплантация (формирователь десны)</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.055</div>
+										<div class="tabs__text">Синхро-лифтинг (костная пластика, остеопластика)</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.055.001</div>
+										<div class="tabs__text">Синхро-лифтинг (костная пластика, остеопластика). Открытый</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.058</div>
+										<div class="tabs__text">
+											Лечение перикоронарита (промывание, рассечение и/или иссечение
+								капюшона)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.089.001</div>
+										<div class="tabs__text">Гингивэктомия в&nbsp;области 1&nbsp;зуба</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.096</div>
+										<div class="tabs__text">Пластика перфорации верхнечелюстной пазухи</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.097</div>
+										<div class="tabs__text">Наложение шва на&nbsp;слизистую оболочку рта</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.22.012</div>
+										<div class="tabs__text">Удаление камней из&nbsp;протоков слюнных желез</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.30.026</div>
+										<div class="tabs__text">Удаление импланта, трансплантата</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.30.069</div>
+										<div class="tabs__text">Снятие послеоперационных швов</div>
+										<div class="tabs__price"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">А02.07.010.003</div>
+										<div class="tabs__text">
+											Исследование на&nbsp;диагностиных моделях челюстей. Составление
+								ортодонтического плана лечения
+										</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.018</div>
+										<div class="tabs__text">
+											Ортодонтическое шинирование металлической проволокой. Фиксация
+								на&nbsp;зубной ряд
+										</div>
+										<div class="tabs__price">20&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.028</div>
+										<div class="tabs__text">Ортодонтическая коррекция</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.028.001</div>
+										<div class="tabs__text">Ортодонтическая коррекция с&nbsp;заменой дуги в&nbsp;брекет-системе</div>
+										<div class="tabs__price">7&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.028.002</div>
+										<div class="tabs__text">Ортодонтическая коррекция с&nbsp;заменой ортодонтического элемента</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.028.003</div>
+										<div class="tabs__text">Ортодонтическая коррекция в&nbsp;период лечения</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.035.001</div>
+										<div class="tabs__text">Протезирование частично съемными пластиночными протезами для детей</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.046</div>
+										<div class="tabs__text">Ортодонтическая коррекция несъемным ортодонтическим аппаратом</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.046.001</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция несъемным ортодонтическим аппаратом.
+								Кольцо с&nbsp;распоркой
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.046.002</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция несъемным ортодонтическим аппаратом.
+								Кольцо с&nbsp;замком
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.046.003</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция несъемным ортодонтическим аппаратом.
+								С&nbsp;целью интрузии зуба
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.046.004</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция несъемным ортодонтическим аппаратом.
+								С&nbsp;целью экструзии зуба
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047</div>
+										<div class="tabs__text">Ортодонтическая коррекция съемным ортодонтическим аппаратом</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.001</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Одночелюстной аппарат. Ретейнер
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.002</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Двучелюстной аппарат
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.003</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Корректор, LM-Активатор
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.005</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Элайнерами (полный кейс)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.006</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Элайнерами (подростки)
+										</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.007</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Элайнерами (укороченный)
+										</div>
+										<div class="tabs__price">450&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.047.008</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция съемным ортодонтическим аппаратом.
+								Элайнерами (быстрый)
+										</div>
+										<div class="tabs__price">350&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.048</div>
+										<div class="tabs__text">Ортодонтическая коррекция с&nbsp;применением брекет-систем</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.048.001</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция с&nbsp;применением брекет-систем.
+								Металлические лигатурные
+										</div>
+										<div class="tabs__price">100&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.048.002</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция с&nbsp;применением брекет-систем.
+								Металлические самолигирующие
+										</div>
+										<div class="tabs__price">120&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.048.003</div>
+										<div class="tabs__text">
+											Ортодонтическая коррекция с&nbsp;применением брекет-систем.
+								Керамические эстетические
+										</div>
+										<div class="tabs__price">140&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А16.07.053.001</div>
+										<div class="tabs__text">Снятие, постановка коронки, кольца ортодонтического</div>
+										<div class="tabs__price">3&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А23.07.001.003</div>
+										<div class="tabs__text">Снятие брекет-системы с&nbsp;1&nbsp;зубного ряда</div>
+										<div class="tabs__price">20&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А23.07.001.002</div>
+										<div class="tabs__text">Ремонт ортодонтического аппарата</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">А23.07.002.065</div>
+										<div class="tabs__text">Изготовление элайнера</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.010.001</div>
+										<div class="tabs__text">Снятие оттиска с&nbsp;одной челюсти</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.010.002</div>
+										<div class="tabs__text">
+											Снятие оттиска с&nbsp;одной челюсти с&nbsp;использованием
+								индивидуальной ложки
+										</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.006</div>
+										<div class="tabs__text">Определение прикуса</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.006.001</div>
+										<div class="tabs__text">Определение вида смыкания зубных рядов с&nbsp;помощью лицевой дуги</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.010</div>
+										<div class="tabs__text">Исследование на&nbsp;диагностических моделях челюстей</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.010.004</div>
+										<div class="tabs__text">
+											Исследование на&nbsp;диагностических моделях челюстей, восковое
+								моделирование
+										</div>
+										<div class="tabs__price">6&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A02.07.010.005</div>
+										<div class="tabs__text">
+											Исследование на&nbsp;диагностических моделях челюстей,
+								с&nbsp;изготовлением хирургического шаблона для позиционирования имплантатов
+										</div>
+										<div class="tabs__price">15&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.001</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой. Винир</div>
+										<div class="tabs__price">70&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.002</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой. Винир</div>
+										<div class="tabs__price">80&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.003</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой. Винир</div>
+										<div class="tabs__price">90&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.004</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой. Вкладкой</div>
+										<div class="tabs__price">60&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.005</div>
+										<div class="tabs__text">Восстановление зуба вкладками, виниром, полукоронкой. Вкладкой</div>
+										<div class="tabs__price">70&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.003.006</div>
+										<div class="tabs__text">Восстановление зуба временным виниром, полукоронкой</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.004</div>
+										<div class="tabs__text">Восстановление зуба коронкой</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.004.001</div>
+										<div class="tabs__text">Восстановление зуба коронкой керамической</div>
+										<div class="tabs__price">60&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.004.002</div>
+										<div class="tabs__text">Восстановление зуба коронкой керамической</div>
+										<div class="tabs__price">70&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.004.003</div>
+										<div class="tabs__text">Восстановление зуба коронкой керамической</div>
+										<div class="tabs__price">80&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.004.004</div>
+										<div class="tabs__text">Восстановление зуба коронкой временной</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.006</div>
+										<div class="tabs__text">Протезирование зуба с&nbsp;использованием имплантата</div>
+										<div class="tabs__price"></div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.006.001</div>
+										<div class="tabs__text">
+											Протезирование зуба с&nbsp;использованием имплантата
+								с&nbsp;титановым основанием
+										</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.006.002</div>
+										<div class="tabs__text">
+											Протезирование зуба с&nbsp;использованием имплантата
+								с&nbsp;абатментом из&nbsp;диоксида циркония
+										</div>
+										<div class="tabs__price">30&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.006.003</div>
+										<div class="tabs__text">
+											Протезирование зуба с&nbsp;использованием имплантата
+								с&nbsp;MULTI-UNIT абатментом
+										</div>
+										<div class="tabs__price">30&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.006.004</div>
+										<div class="tabs__text">
+											Протезирование зуба с&nbsp;использованием имплантата с&nbsp;помощью
+								Locator абатментов
+										</div>
+										<div class="tabs__price">50&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.021.001</div>
+										<div class="tabs__text">
+											Коррекция прикуса с&nbsp;использованием съемных и&nbsp;несъемных
+								ортопедических конструкций&nbsp;&mdash; сплинт
+										</div>
+										<div class="tabs__price">15&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.023</div>
+										<div class="tabs__text">Протезирование зуба полными съемными пластиночными протезами</div>
+										<div class="tabs__price">70&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.033</div>
+										<div class="tabs__text">
+											Восстановление зуба коронкой с&nbsp;использованием цельнолитой
+								культевой вкладки
+										</div>
+										<div class="tabs__price">20&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.035</div>
+										<div class="tabs__text">Протезирование частичными съемными пластиночными протезами</div>
+										<div class="tabs__price">60&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.036.001</div>
+										<div class="tabs__text">Протезирование съемными бюгельными протезами</div>
+										<div class="tabs__price">250&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.049.001</div>
+										<div class="tabs__text">
+											Повторная фиксация на&nbsp;постоянный цемент несъемных
+								ортопедических конструкций
+										</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A16.07.053</div>
+										<div class="tabs__text">Снятие несъемной ортопедической конструкции</div>
+										<div class="tabs__price">5&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.012</div>
+										<div class="tabs__text">Изготовление армированной дуги литой</div>
+										<div class="tabs__price">45&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.034</div>
+										<div class="tabs__text">Перебазировка съемного протеза лабораторным методом</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.035</div>
+										<div class="tabs__text">Приварка кламмера</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.036</div>
+										<div class="tabs__text">Приварка зуба</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.037</div>
+										<div class="tabs__text">Починка перелома базиса самотвердеющей пластмассой</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.046</div>
+										<div class="tabs__text">Изготовление замкового крепления</div>
+										<div class="tabs__price">25&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.064</div>
+										<div class="tabs__text">Изготовление штифтовой конструкции</div>
+										<div class="tabs__price">20&nbsp;000</div>
+									</div>
+									<div class="tabs__item">
+										<div class="tabs__code">A23.07.002.068</div>
+										<div class="tabs__text">Изготовление съемной пластинки с&nbsp;наклонной плоскости</div>
+										<div class="tabs__price">10&nbsp;000</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__header">
+						<h2>КОНТАКТЫ</h2>
+						<p>[связаться с нами]</p>
+					</div>
+					<div class="footer__content">
+						<div class="footer__column">
+							<h3>[информация]</h3>
+							<a>ООО «Картье»</a>
+							<a href="#license">Лицензия ЛО-77-01-021707</a>
+							<a href="#policy">Политика конфиденциальности</a>
+							<a href="/licence">Информация для пациентов</a>
+							<a href="/site-map">Карта сайта</a>
+							<a href="https://dentaireavenirclinique.ru/price">Цены</a>
+						</div>
+						<div class="footer__column">
+							<h3>[меню]</h3>
+							<a href="/">Главная</a>
+							<a href="/#about-clinic">О клинике</a>
+							<a href="/#dentists">Команда</a>
+							<a href="/#services">Услуги</a>
+							<a href="/#philosophy">Пациентам</a>
+							<a href="#contacts">Контакты</a>
+						</div>
+						<div class="footer__column">
+							<h3>[услуги]</h3>
+							<a href="/consultation-and-diagnostics">Консультация и диагностика</a>
+							<a href="/preventive-dentistry">Профилактическая стоматология</a>
+							<a href="/therapeutic-dental-treatment">Терапевтическое лечение зубов</a>
+							<a href="/implantation">Хирургия и имплантация</a>
+							<a href="/prosthetics">Протезирование зубов</a>
+							<a href="/periodontology">Пародонтология</a>
+							<a href="/orthodontic-treatment">Ортодонтическое лечение</a>
+						</div>
+						<div class="footer__column">
+							<div class="map__container">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa0491f259f63c7f144b42d22e73ce00da2737eaccad71cde1fa762076b4e2bdb&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+							</div>
+							<div class="contact-info">
+								<p>Время работы: Ежедневно с 9:00-21:00</p>
+								<p>
+									Адрес клиники:
+									<br>
+									Ленинградский просп., 35, стр. 2, Москва
+								</p>
+								<a href="tel:+79675551480">+7 (967) 555-14-80</a>
+							</div>
+							<div class="social-links">
+								<a href="mailto:avenir.dentaire@yandex.ru" target="_blank">✉</a>
+								<a href="https://t.me/Dentaire_Avenir_Clnique" target="_blank">📱</a>
+								<a href="https://api.whatsapp.com/send/?phone=79675551480" target="_blank">💬</a>
+								<a href="https://vk.com/public212677485" target="_blank">VK</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p>© 2025 "DENTAIRE AVENIR CLINIQUE". Все права защищены.</p>
+						<p>Имеются противопоказания. Проконсультируйтесь со специалистом</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="license" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__text license">
+						<div class="license__header">
+							<h1>
+								Выписка из&nbsp;реестра лицензий по&nbsp;состоянию на&nbsp;11:24 25.01.2022&nbsp;г.
+							</h1>
+							<p>(сформирована на&nbsp;интернет-портале Росздравнадзора)</p>
+						</div>
+						<div class="license__info">
+							<p>
+								<span class="license__title">1. Статус лицензии:</span>
+								действует;
+							</p>
+							<p>
+								<span class="license__title">2. Регистрационный номер лицензии:</span>
+								ЛО-77-01-021707;
+							</p>
+							<p>
+								<span class="license__title">3. Дата предоставления лицензии:</span>
+								24.01.2022;
+							</p>
+							<p>
+								<span class="license__title">4. Лицензирующий орган:</span>
+								Департамент здравоохранения города
+						Москвы;
+							</p>
+							<p>
+								<span class="license__title">
+									5. Полное&nbsp;и (в&nbsp;случае, если имеется) сокращённое
+							наименование, в&nbsp;том
+							числе фирменное
+							наименование, и&nbsp;организационно-правовая форма юридического лица, адрес его места
+							нахождения, государственный регистрационный номер записи о&nbsp;создании юридического
+							лица:
+								</span>
+							</p>
+							<div class="license__address">
+								<p>
+									Полное наименование&nbsp;&mdash; Общество с&nbsp;ограниченной ответственностью
+							&laquo;Картье&raquo;;
+								</p>
+								<p>Сокращённое наименование&nbsp;&mdash; ООО &laquo;Картье&raquo;;</p>
+								<p>
+									Фирменное наименование&nbsp;&mdash; Общество с&nbsp;ограниченной ответственностью
+							&laquo;Картье&raquo;;
+								</p>
+								<p>ОПФ&nbsp;&mdash; Общество с&nbsp;ограниченной ответственностью;</p>
+								<p>
+									Адрес места нахождения&nbsp;&mdash; 125284, Россия, г. Москва, вн.тер.г. муниципальный округ
+							Беговой,
+							Ленинградский пр-кт, д.&nbsp;35, стр.&nbsp;2, этаж 1&nbsp;помещ. IX, X;
+								</p>
+								<p>ОГРН&nbsp;&mdash; 1217700071710;</p>
+							</div>
+							<p>
+								<span class="license__title">6. Идентификационный номер налогоплательщика:</span>
+								7714469048;
+							</p>
+							<p>
+								<span class="license__title">7. Лицензируемый вид деятельности:</span>
+								Медицинская деятельность
+						(за&nbsp;исключением указанной
+						деятельности, осуществляемой медицинскими организациями и&nbsp;другими организациями,
+						входящими в&nbsp;частную систему здравоохранения, на&nbsp;территории инновационного центра
+						&laquo;Сколково&raquo;);
+							</p>
+							<p>
+								<span class="license__title">
+									8. Адреса мест осуществления лицензируемого вида деятельности с
+							указанием выполняемых
+							работ, оказываемых услуг, составляющих лицензируемый вид деятельности:
+								</span>
+							</p>
+							<div class="license__address">
+								<p>125284, г. Москва, пр-кт Ленинградский, д.&nbsp;35, стр.&nbsp;2</p>
+								<p>выполняемые работы, оказываемые услуги:</p>
+								<p>Приказ 866н;</p>
+								<p>
+									При оказании первичной медико-санитарной помощи организуются и&nbsp;выполняются следующие
+							работы (услуги):
+								</p>
+								<p>
+									при оказании первичной доврачебной медико-санитарной помощи в&nbsp;амбулаторных условиях
+							по:
+								</p>
+								<ul>
+									<li>рентгенологии;</li>
+									<li>сестринскому делу;</li>
+									<li>стоматологии профилактической;</li>
+								</ul>
+								<p>
+									при оказании первичной специализированной медико-санитарной помощи в&nbsp;амбулаторных
+							условиях
+							по:
+								</p>
+								<ul>
+									<li>ортодонтии;</li>
+									<li>рентгенологии;</li>
+									<li>стоматологии детской;</li>
+									<li>стоматологии общей практики;</li>
+									<li>стоматологии ортопедической;</li>
+									<li>стоматологии терапевтической;</li>
+									<li>стоматологии хирургической.</li>
+								</ul>
+							</div>
+							<p>
+								<span class="license__title">9. Номер и&nbsp;дата приказа (распоряжения) лицензирующего
+							органа:</span>
+								&#8470;&nbsp;62-Л от&nbsp;24.01.2022.
+							</p>
+						</div>
+						<div class="license__footer">
+							<p>
+								Выписка носит информационный характер, после ее&nbsp;составления в&nbsp;реестр лицензий могли
+						быть внесены
+						изменения.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
