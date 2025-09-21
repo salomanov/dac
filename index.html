@@ -1,14 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/FrizQuadrataC.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1758079467924"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758079467924">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1758079467924">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1758453392570"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758453392570">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1758453392570">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -28,16 +32,16 @@
 								</div>
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="index" class="menu__link">О клинике</a>
+										<a href="index" class="menu__link">Главная</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Услуги</a>
+										<a href="index#services" class="menu__link">Услуги</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Команда</a>
+										<a href="#" class="menu__link">Команда</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Отзывы</a>
+										<a href="#" class="menu__link">Отзывы</a>
 									</li>
 									<li class="menu__item">
 										<a href="price" class="menu__link">Цены</a>
@@ -46,6 +50,12 @@
 								<ul class="menu__contacts">
 									<li class="menu__tel">
 										<a href="" target="_blank">+7 (967) 555-14-80</a>
+									</li>
+									<li class="menu__ring">
+										<a href="" target="_blank">Позвонить</a>
+									</li>
+									<li class="menu__nav">
+										<a href="" target="_blank">Проложить маршрут</a>
 									</li>
 									<li class="menu__mail">
 										<a href="mailto:email@example.com">
@@ -62,6 +72,15 @@
 											<img src="./assets/img/wa.svg" width="25" height="25" alt="Вотсап">
 										</a>
 									</li>
+									<li class="menu__vk">
+										<a href="https://vk.com/public212677485" target="_blank">
+											<img src="./assets/img/vk.svg" alt="Image">
+										</a>
+									</li>
+									<li class="menu__info">
+										<p>Ежедневно с 9:00-21:00</p>
+										<p>Ленинградский просп., 35, стр. 2, Москва</p>
+									</li>
 								</ul>
 							</div>
 						</nav>
@@ -77,20 +96,32 @@
 			<main class="page page--home home">
 				<div class="home__container">
 					<div class="home__items">
-						<section class="home__item name">
-							<div class="name__title">
-								<h1>DENTAIRE</h1>
-								<div class="name__diamond">
-									<h1>AVENIR</h1>
-									<img src="./assets/img/diamond.svg" width="5" height="5" alt="Логотип DENTAIRE AVENIR CLINIQUE">
-								</div>
-								<h1>CLINIQUE</h1>
-							</div>
-							<h2>Авторский стоматологический центр</h2>
-						</section>
+						<!--
+<section class="home__item logo">
+<section class="logo__main"></section>
+</section>
+-->
 						<section class="home__item first">
-							<div class="first__Photo">
-								<img src="./assets/img/team.jpg" width="100%" alt="Команда стоматологической клиники DENTAIRE AVENIR CLINIQUE">
+							<div class="first__name name">
+								<div class="name__title">
+									<h1>DENTAIRE</h1>
+									<div class="name__diamond">
+										<h1>AVENIR</h1>
+										<img src="./assets/img/diamond.svg" width="5" height="5" alt="Логотип DENTAIRE AVENIR CLINIQUE">
+									</div>
+									<h1>CLINIQUE</h1>
+								</div>
+								<h2>Авторский стоматологический центр</h2>
+								<div class="first__logo logo">
+									<div class="logo__main"></div>
+								</div>
+							</div>
+							<div class="first__Photo Photo">
+								<div class="Photo__main"></div>
+								<!--
+<img src="@img/autor.jpeg" width="100%"
+alt="Команда стоматологической клиники DENTAIRE AVENIR CLINIQUE">
+-->
 							</div>
 							<div class="first__Text">
 								<h2>Наша главная задача&nbsp;&mdash; добиться вашего полного выздоровления.</h2>
@@ -134,7 +165,7 @@
 						диагностику и&nbsp;лечение в&nbsp;соответствии с&nbsp;лучшими европейскими стандартами
 								</p>
 							</div>
-							<div class="team__items">
+							<div class="team__items" data-fls-gsap="">
 								<article class="team__item">
 									<div class="team__foto"></div>
 									<div class="team__name">
@@ -181,7 +212,7 @@
 								</article>
 							</div>
 						</section>
-						<section class="home__item services">
+						<section class="home__item services" id="services">
 							<div class="services__title">
 								<h1>Наши услуги</h1>
 							</div>

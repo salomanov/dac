@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/FrizQuadrataC.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Цены</title>
-		<script type="module" crossorigin="" src="./js/price.min.js?v=1758079467923"></script>
+		<script type="module" crossorigin="" src="./js/price.min.js?v=1758453392571"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758079467923">
-		<link rel="stylesheet" crossorigin="" href="./css/price.min.css?v=1758079467923">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758453392571">
+		<link rel="stylesheet" crossorigin="" href="./css/price.min.css?v=1758453392571">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -29,16 +32,16 @@
 								</div>
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="index" class="menu__link">О клинике</a>
+										<a href="index" class="menu__link">Главная</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Услуги</a>
+										<a href="index#services" class="menu__link">Услуги</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Команда</a>
+										<a href="#" class="menu__link">Команда</a>
 									</li>
 									<li class="menu__item">
-										<a href="index" class="menu__link">Отзывы</a>
+										<a href="#" class="menu__link">Отзывы</a>
 									</li>
 									<li class="menu__item">
 										<a href="price" class="menu__link">Цены</a>
@@ -47,6 +50,12 @@
 								<ul class="menu__contacts">
 									<li class="menu__tel">
 										<a href="" target="_blank">+7 (967) 555-14-80</a>
+									</li>
+									<li class="menu__ring">
+										<a href="" target="_blank">Позвонить</a>
+									</li>
+									<li class="menu__nav">
+										<a href="" target="_blank">Проложить маршрут</a>
 									</li>
 									<li class="menu__mail">
 										<a href="mailto:email@example.com">
@@ -63,6 +72,15 @@
 											<img src="./assets/img/wa.svg" width="25" height="25" alt="Вотсап">
 										</a>
 									</li>
+									<li class="menu__vk">
+										<a href="https://vk.com/public212677485" target="_blank">
+											<img src="./assets/img/vk.svg" alt="Image">
+										</a>
+									</li>
+									<li class="menu__info">
+										<p>Ежедневно с 9:00-21:00</p>
+										<p>Ленинградский просп., 35, стр. 2, Москва</p>
+									</li>
 								</ul>
 							</div>
 						</nav>
@@ -77,7 +95,7 @@
 			</header>
 			<main class="page page--price price">
 				<div class="price__container">
-					<div data-fls-tabs="" class="tabs">
+					<div data-fls-tabs="768" data-fls-tabs-animate="1000" class="tabs">
 						<div class="tabs__header">
 							<div class="price__title">Прейскурант ООО "Картье"</div>
 							<nav data-fls-tabs-titles="" class="tabs__navigation">
